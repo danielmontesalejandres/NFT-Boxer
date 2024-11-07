@@ -8,6 +8,8 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 
 /// @custom:security-contact matt_del88@hotmail.com
 contract Constantina is ERC721, ERC721URIStorage, Ownable {
+    uint256 private _nextTokenId;
+
     constructor(address initialOwner)
         ERC721("Constantina", "TINA")
         Ownable(initialOwner)
@@ -17,10 +19,8 @@ contract Constantina is ERC721, ERC721URIStorage, Ownable {
         return "https://sapphire-basic-pigeon-114.mypinata.cloud/ipfs/QmVUh5pVBY9NvczUCUdMJFx6vjhc7A3Qzm5uC7LCM54fGZ";
     }
 
-    function safeMint(address to, uint256 tokenId, string memory uri)
-        public
-        onlyOwner
-    {
+    function safeMint(address to, string memory uri) public onlyOwner {
+        uint256 tokenId = _nextTokenId++;
         _safeMint(to, tokenId);
         _setTokenURI(tokenId, uri);
     }

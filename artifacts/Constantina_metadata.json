@@ -407,11 +407,6 @@
 						"type": "address"
 					},
 					{
-						"internalType": "uint256",
-						"name": "tokenId",
-						"type": "uint256"
-					},
-					{
 						"internalType": "string",
 						"name": "uri",
 						"type": "string"
@@ -899,11 +894,11 @@
 			]
 		},
 		"ERC-721-tina.sol": {
-			"keccak256": "0x048c386f4318e28f0ac4a06b84a9df6a09c6d763d29cb5b9aaced2685a060dbb",
+			"keccak256": "0xd428bab5287689ea18757eedd22554fa6881418fa5071fe1dd56111e02d867ed",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://b48a96d36893e0a75b4b44fbc634bfa29932975b27fa683ba36c175a2c8fb88e",
-				"dweb:/ipfs/QmQJwi3uUqWBX7ZkbGxy3Z4zjwxt7yrToxYMXhkspDi3RX"
+				"bzz-raw://5429f5b3142750ede69e0de8ec9b26a511b4cfe7bb6139805eac85e7dfac7eeb",
+				"dweb:/ipfs/QmVHn46KrbRjocNZ5nKs3vZQLP7VGVtrcayVHhvzXtMyEU"
 			]
 		}
 	},
